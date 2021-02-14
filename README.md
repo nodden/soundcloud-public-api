@@ -1,4 +1,4 @@
-`Soundcloud-public-api`
+# `Soundcloud-public-api`
 
 ---
 An API that doesn't require a soundcloud developer account.
