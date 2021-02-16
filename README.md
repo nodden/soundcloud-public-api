@@ -1,7 +1,7 @@
 # `Soundcloud-public-api`
 
 ---
-[![Build Status](https://www.travis-ci.com/nodden/soundcloud-public-api.svg?branch=development)](https://www.travis-ci.com/nodden/soundcloud-public-api)
+[![Build Status](https://www.travis-ci.com/nodden/soundcloud-public-api.svg?branch=master)](https://www.travis-ci.com/nodden/soundcloud-public-api)
 
 An API that doesn't require a soundcloud developer account.
 

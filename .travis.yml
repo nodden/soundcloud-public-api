@@ -2,13 +2,19 @@ language: node
 node_js:
   - 12.20.2
 
+branches:
+  only:
+    - master
+
 cache:
   directories:
     - node_modules
 
-script:
-  - npm run dev
+before_script:
+  - npm install
 
-branches:
-  only:
-    - master
+install:
+  - npm install
+
+script:
+  - npm run build
