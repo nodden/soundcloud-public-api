@@ -1,0 +1,14 @@
+language: node
+node_js:
+  - 12.20.2
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run dev
+
+branches:
+  only:
+    - master
