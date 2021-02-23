@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node-fetch": "^2.5.8",
+    "jssoup": "0.0.12",
     "node-fetch": "^2.6.1",
     "tslib": "^2.1.0"
   }
