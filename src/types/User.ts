@@ -1,30 +1,37 @@
-export interface Product {
-    id: string;
+export interface SoundCloudUser {
+    avatar_url: string
+    city: string
+    first_name: string
+    followers_count: number
+    country_code: any
+    full_name: string
+    last_name: string
+    id: number
+    kind: string
+    last_modified: string
+    permalink: string
+    permalink_url: string
+    uri: string
+    urn: string
+    username: string
+    verified: boolean
+    badges: Badges
 }
 
-export interface CreatorSubscription {
-    product: Product;
-}
-
-export interface Product2 {
-    id: string;
-}
-
-export interface CreatorSubscription2 {
-    product: Product2;
-}
-
-export interface Visual {
-    urn: string;
-    entry_time: number;
-    visual_url: string;
-}
-
-export interface Visuals {
-    urn: string;
-    enabled: boolean;
-    visuals: Visual[];
-    tracking?: any;
+export interface SoundCloudUserProfile extends SoundCloudUser {
+    comments_count: number
+    created_at: string
+    creator_subscriptions: CreatorSubscription[]
+    creator_subscription: CreatorSubscription2
+    description: string
+    followings_count: number
+    groups_count: number
+    likes_count: number
+    playlist_likes_count: number
+    playlist_count: number
+    reposts_count: any
+    track_count: number
+    visuals: Visuals
 }
 
 export interface Badges {
@@ -33,35 +40,31 @@ export interface Badges {
     verified: boolean;
 }
 
-export interface SoundCloudUser {
-    avatar_url: string;
-    city?: any;
-    comments_count: number;
-    country_code: string;
-    created_at: Date;
-    creator_subscriptions: CreatorSubscription[];
-    creator_subscription: CreatorSubscription2;
-    description?: any;
-    followers_count: number;
-    followings_count: number;
-    first_name: string;
-    full_name: string;
-    groups_count: number;
-    id: number;
-    kind: string;
-    last_modified: Date;
-    last_name: string;
-    likes_count: number;
-    playlist_likes_count: number;
-    permalink: string;
-    permalink_url: string;
-    playlist_count: number;
-    reposts_count?: any;
-    track_count: number;
-    uri: string;
-    urn: string;
-    username: string;
-    verified: boolean;
-    visuals: Visuals;
-    badges: Badges;
+export interface CreatorSubscription {
+    product: Product
+}
+
+export interface Product {
+    id: string
+}
+
+export interface CreatorSubscription2 {
+    product: Product2
+}
+
+export interface Product2 {
+    id: string
+}
+
+export interface Visuals {
+    urn: string
+    enabled: boolean
+    visuals: Visual[]
+    tracking: any
+}
+
+export interface Visual {
+    urn: string
+    entry_time: number
+    visual_url: string
 }
